@@ -2,7 +2,11 @@ from scrapLink import tomaLink
 from scrapDescription import search
 
 linkMaster='https://carros.mercadolibre.com.co/_Desde_'
-
+#buscarLinks para buscar todos links de la url hasta que acabe
+#buscarLinks()
+#llenarInfo para leer los datos dentro del txt y llenar otro con los datos de cada enlace inicial
+#precio, nombre, descripcion basica, url de imagen, url de videos
+llenarInfo()
 def buscarLinks():
     archivo= open('linkML.txt','w')
     for escr in tomaLink():
@@ -27,8 +31,3 @@ def llenarInfo():
     archivo2.close()
     print('listo los links')
     
-#buscarLinks para buscar todos links de la url hasta que acabe
-#buscarLinks()
-#llenarInfo para leer los datos dentro del txt y llenar otro con los datos de cada enlace inicial
-#precio, nombre, descripcion basica, url de imagen, url de videos
-llenarInfo()
